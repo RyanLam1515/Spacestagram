@@ -38,7 +38,7 @@ const SpaceImageCard = ({
     }
     const likeButtonDisabled = liked.some((card) => card.title === value.title);
 
-    const shareUrl = 'https://www.youtube.com/watch?v=9WzIACv_mxs';
+    const shareUrl = 'https://spacestagram-rl.herokuapp.com/';
 
     return (
         <div className='spaceImageCard'>
@@ -52,10 +52,10 @@ const SpaceImageCard = ({
                 <FacebookShareButton url={shareUrl} quote={title}>
                     <FacebookIcon size={40}></FacebookIcon>    
                 </FacebookShareButton>
-                <LinkedinShareButton url={shareUrl} title={title} summary={explanation} source='NASA Astrony Picture of the Day API'>
+                <LinkedinShareButton url={shareUrl} title={title} summary={explanation} source='NASA Astronomy Picture of the Day API'>
                     <LinkedinIcon size={40}></LinkedinIcon>
                 </LinkedinShareButton>
-                <TwitterShareButton url={shareUrl} title={title} via='NASA Astrony Picture of the Day API'>
+                <TwitterShareButton url={shareUrl} title={title} via='NASA Astronomy Picture of the Day API'>
                     <TwitterIcon size={40}></TwitterIcon>
                 </TwitterShareButton>
             </div>
