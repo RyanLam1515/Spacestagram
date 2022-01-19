@@ -1,0 +1,39 @@
+.spaceImageCard {
+  width: 45%;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.spaceImg {
+  object-fit: contain;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.spaceImageInfo {
+  font-family: "Segoe UI", sans-serif;
+  margin: 20px;
+}
+
+.spaceImageTitle {
+  display: flex;
+  align-items: left;
+  font-size: 24px;
+  width: 100%;
+}
+
+.explanation {
+  text-align: left;
+}
+
+.shareableLinksContainer {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  position: relative;
+  padding-right: 2px;
+}
