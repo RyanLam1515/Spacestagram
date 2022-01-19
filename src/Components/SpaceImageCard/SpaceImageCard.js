@@ -19,7 +19,6 @@ const SpaceImageCard = ({
     liked
 }) => {
 
-    // const { addCardToLiked, liked } = useContext(GlobalContext);
     const [isClick, setClick] = useState(false);
 
 

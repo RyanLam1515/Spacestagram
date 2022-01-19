@@ -36,7 +36,7 @@ export const Apod = ({ addCardToLiked, removeCardFromLiked, liked }) => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        `https://api.nasa.gov/planetary/apod?api_key=sgpDRzjwPF83CAOaVvqU7tDSdz6Rc8J2ywbEbNQN&start_date=${startDate
+        `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&start_date=${startDate
           .toISOString()
           .substring(0, 10)}&end_date=${endDate.toISOString().substring(0, 10)}`
       );
