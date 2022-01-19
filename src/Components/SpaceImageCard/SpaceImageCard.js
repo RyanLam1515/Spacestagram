@@ -36,7 +36,7 @@ const SpaceImageCard = ({
             removeCardFromLiked(value);
         }
     }
-    const likeButtonDisabled = liked.some((card) => card.title === value.title);
+    const likeButtonDisabled = liked?.some((card) => card.title === value.title);
 
     const shareUrl = 'https://spacestagram-rl.herokuapp.com/';
 
