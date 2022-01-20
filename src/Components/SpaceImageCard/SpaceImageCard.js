@@ -24,14 +24,14 @@ const SpaceImageCard = ({
 
 
     const handleLikeButtonClick = () => {
-        if (!liked.some((card) => card.title === value.title)) {
+        if (!liked?.some((card) => card.title === value.title)) {
         setClick(!isClick)
         addCardToLiked(value);
         } 
     }
 
     const handleRemoveLikeButtonClick = () => {
-        if (liked.some((card) => card.title === value.title)) {
+        if (liked?.some((card) => card.title === value.title)) {
             setClick(!isClick);
             removeCardFromLiked(value);
         }
