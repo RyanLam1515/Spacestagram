@@ -46,7 +46,7 @@ function App() {
 
   useEffect(() => {
     const likedPhotos = JSON.parse(localStorage.getItem('liked'));
-    setLiked(likedPhotos);
+    setLiked(likedPhotos ? likedPhotos: []);
   }, []);
 
 
