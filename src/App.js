@@ -29,15 +29,19 @@ function App() {
   }
 
   const addCardToLiked = (newCard) => {
+    console.log(liked);
     const newLikedList = [...liked, newCard];
     setLiked(newLikedList);
     saveToLocalStorage(newLikedList);
+    console.log(liked);
   };
 
   const removeCardFromLiked = (card) => {
+    console.log(liked);
     const newLikedList = liked.filter((likedCard) => likedCard.title !== card.title);
     setLiked(newLikedList);
     saveToLocalStorage(newLikedList);
+    console.log(liked);
   }
 
   useEffect(() => {
