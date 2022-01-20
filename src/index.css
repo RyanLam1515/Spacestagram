@@ -7,9 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: whitesmoke;
+  background-color: rgb(235, 241, 241);
 }
-
 .datePickerContainer {
   display: flex;
   justify-content: space-evenly;

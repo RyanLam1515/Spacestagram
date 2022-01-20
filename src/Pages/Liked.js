@@ -16,7 +16,7 @@ const Liked = ({ liked, addCardToLiked, removeCardFromLiked }) => {
   };
 
   const AlertTemplate = ({ message }) => (
-    <div className="alert red-bg">{message}</div>
+    <div>{message}</div>
   );
 
   return (

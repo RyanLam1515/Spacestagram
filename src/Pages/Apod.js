@@ -29,7 +29,7 @@ export const Apod = ({ addCardToLiked, removeCardFromLiked, liked }) => {
   };
 
   const AlertTemplate = ({ message }) => (
-    <div className="alert red-bg">{message}</div>
+    <div>{message}</div>
   );
 
   const fetchPhotoOfTheDay = async () => {
